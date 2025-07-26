@@ -1181,7 +1181,7 @@ class Helper {
  * @param int $user_id The ID of the user.
  * @return array The schedule topics related to the user.
  */
-	public static function speaker_sessions($user_id) {
+        public static function speaker_sessions($user_id) {
 		// Initialize an array to hold matched post IDs
 		$matched_posts = [];
 
@@ -1220,8 +1220,31 @@ class Helper {
 
 		// Return the matched post IDs
 		
-		return array_unique($matched_posts);
-	}
+                return array_unique($matched_posts);
+        }
+
+        /**
+         * Get events created by a specific author.
+         *
+         * @param int $user_id The ID of the user.
+         *
+         * @return array List of WP_Post objects
+         */
+        public static function events_by_author( $user_id ) {
+                $args = [
+                        'post_type'      => 'etn',
+                        'post_status'    => 'publish',
+                        'posts_per_page' => -1,
+                        'author'         => $user_id,
+                ];
+
+                $query  = new \WP_Query( $args );
+                $events = $query->posts;
+
+                wp_reset_postdata();
+
+                return $events;
+        }
 	
 	/**
 	 * Remove attendee data when status failed

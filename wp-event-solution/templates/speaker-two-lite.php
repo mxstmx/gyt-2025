@@ -169,7 +169,28 @@ $author_name       = get_the_author_meta( 'display_name', $author_id );
 					</div>
 				</div>
 			</div>
-			<!-- schedule list -->
-		</div>
-	</div>
+                        <!-- schedule list -->
+
+                        <?php
+                            $events = \Etn\Utils\Helper::events_by_author( $author_id );
+                            if ( $events ) :
+                        ?>
+                            <div class="etn-speaker-events">
+                                <h3 class="etn-title">
+                                    <?php echo esc_html__( 'Events by', 'eventin' ) . ' ' . esc_html( $author_name ); ?>
+                                </h3>
+                                <ul class="etn-event-list">
+                                    <?php foreach ( $events as $event ) : ?>
+                                        <li>
+                                            <a href="<?php echo esc_url( get_permalink( $event->ID ) ); ?>">
+                                                <?php echo esc_html( get_the_title( $event->ID ) ); ?>
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+
+                </div>
+        </div>
 </div>
