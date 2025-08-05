@@ -152,6 +152,11 @@ if ( !function_exists( 'speaker_objective' ) ) {
 
 if ( !function_exists( 'etn_single_speaker_template_select' ) ) {
     function etn_single_speaker_template_select() {
+        if ( function_exists( 'elementor_theme_has_location' ) && elementor_theme_has_location( 'single' ) ) {
+            elementor_theme_do_location( 'single' );
+            return;
+        }
+
         $default_template_name = "speaker-one";
         $settings              = etn_get_option();
         $template_name         = !empty( $settings['speaker_template'] ) ? $settings['speaker_template'] : $default_template_name;
