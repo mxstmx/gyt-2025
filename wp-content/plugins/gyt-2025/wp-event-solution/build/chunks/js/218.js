@@ -1,8 +1,0 @@
-"use strict";(globalThis.webpackChunkwp_event_solution=globalThis.webpackChunkwp_event_solution||[]).push([[218],{15915:(e,t,n)=>{n.d(t,{A:()=>c});var a=n(51609),i=n(56427),l=n(92911),o=n(79664),r=n(18062),s=n(27154);function c(e){const{title:t}=e;return(0,a.createElement)(i.Fill,{name:s.PRIMARY_HEADER_NAME},(0,a.createElement)(l.A,{justify:"space-between",align:"center",wrap:"wrap",gap:20},(0,a.createElement)(r.A,{title:t}),(0,a.createElement)("div",{style:{display:"flex",alignItems:"center",gap:"12px"}},(0,a.createElement)(o.A,null))))}},94218:(e,t,n)=>{n.r(t),n.d(t,{default:()=>m});var a=n(51609),i=n(29491),l=n(47143),o=n(27723),r=n(19728),s=n(47767),c=n(69815),u=n(15915);const g=(0,l.withSelect)((e=>{const t=e("eventin/global");return{settings:t.getSettings(),isLoading:t.isResolving("getSettings")}})),m=(0,i.compose)(g)((function(e){(0,r.fB)({prefix:"eve"});const{settings:t,isLoading:n}=e||{},i=(0,s.useNavigate)();if(t&&"on"!==t?.modules?.automation)return(0,a.createElement)(s.Navigate,{to:"/dashboard",replace:!0});const l=c.default.div`
-        background-color: #f4f6fa;
-        padding: 12px 32px;
-
-        .automation-list__header .ant-btn-primary {
-            height: 40px;
-        }
-    `;return(0,a.createElement)(a.Fragment,null,(0,a.createElement)(u.A,{title:(0,o.__)("Automation","eventin")}),(0,a.createElement)(l,null,(0,a.createElement)(r.eb,{onEdit:e=>i(`/automation/${e}/edit`)})))}))}}]);
