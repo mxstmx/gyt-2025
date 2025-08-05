@@ -31,14 +31,19 @@ class SpeakerTemplate implements HookableInterface {
 		$author_id = get_queried_object_id();
 		$author = get_userdata( $author_id );
 	
-		if ( $author && ( in_array( 'etn-speaker', (array) $author->roles) || in_array('etn-organizer', (array) $author->roles ) ) ) {
-			// Path to your custom author template in the plugin folder
-			$custom_template = \Wpeventin::templates_dir() . 'speaker/single-author.php';
-			// If the file exists, use it
-			if ( file_exists( $custom_template ) ) {
-				return $custom_template;
-			}
-		}
+                if ( $author && ( in_array( 'etn-speaker', (array) $author->roles) || in_array('etn-organizer', (array) $author->roles ) ) ) {
+                        // Allow Elementor Theme Builder to override the author page
+                        if ( function_exists( 'elementor_theme_has_location' ) && ( elementor_theme_has_location( 'author' ) || elementor_theme_has_location( 'archive' ) ) ) {
+                                return $template;
+                        }
+
+                        // Path to your custom author template in the plugin folder
+                        $custom_template = \Wpeventin::templates_dir() . 'speaker/single-author.php';
+                        // If the file exists, use it
+                        if ( file_exists( $custom_template ) ) {
+                                return $custom_template;
+                        }
+                }
 	
 		return $template;
 	}
@@ -49,6 +54,11 @@ class SpeakerTemplate implements HookableInterface {
      * @return  void
      */
     public function include_single_template() {
+        if ( function_exists( 'elementor_theme_has_location' ) && elementor_theme_has_location( 'single' ) ) {
+            elementor_theme_do_location( 'single' );
+            return;
+        }
+
         $default_template_name = "speaker-one";
         $settings              = etn_get_option();
         $template_name         = !empty( $settings['speaker_template'] ) ? $settings['speaker_template'] : $default_template_name;
