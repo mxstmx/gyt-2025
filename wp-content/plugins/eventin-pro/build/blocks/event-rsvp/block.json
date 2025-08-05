@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "eventin-pro/event-rsvp",
+  "title": "Event RSVP",
+  "category": "eventin-blocks",
+  "icon": "EnvironmentOutlined",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "containerClassName": {
+      "type": "string"
+    },
+    "eventId": {
+      "type": "string"
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "Desktop": {},
+        "Tablet": {},
+        "Mobile": {}
+      }
+    }
+  },
+  "editorScript": "file:./index.js"
+}

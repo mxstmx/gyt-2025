@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 495 468">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.8, SVG Export Plug-In . SVG Version: 1.2.0 Build 200)  -->
+  <g>
+    <g id="Ebene_1">
+      <g>
+        <polygon class="cls-1" points="247.5 468 270 450 270 225 333 135 333 27 297 0 297 108 252 180 198 108 198 0 162 27 162 135 225 225 225 450 247.5 468"/>
+        <polygon class="cls-1" points="135 54 135 189 90 189 90 144 45 180 45 288 90 315 90 261 63 261 63 207 135 207 135 405 0 306 0 153 135 54"/>
+        <polygon class="cls-1" points="360 45 495 144 495 207 450 171 450 351 405 387 405 144 360 117 360 45"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "eventin-pro/event-faq",
+  "title": "Event FAQ",
+  "category": "eventin-blocks",
+  "icon": "EnvironmentOutlined",
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "containerClassName": {
+      "type": "string"
+    },
+    "eventId": {
+      "type": "string"
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "Desktop": {
+          ".eventin-block-container": {
+            "margin": "0px 0px 0px 0px",
+            "padding": "0px 0px 0px 0px",
+            "width": "100%",
+            "position": "relative",
+            "zIndex": 0,
+            "left": "0px",
+            "right": "auto",
+            "top": "0px",
+            "bottom": "auto",
+            "borderColor": "transparent",
+            "borderStyle": "solid",
+            "borderWidth": "0px",
+            "borderRadius": "0px 0px 0px 0px",
+            "boxShadow": "none"
+          },
+          ".eventin-block-container:hover": {},
+          ".etn-content-item .etn-accordion-heading": {
+            "fontSize": "1.375rem",
+            "fontWeight": "700",
+            "color": "#111111",
+            "margin": "0 0 15px",
+            "padding": "0px 40px 0px 0px",
+            "lineHeight": 1.5,
+            "cursor": "pointer",
+            "position": "relative"
+          },
+          ".etn-content-item .etn-acccordion-contents": {
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "margin": "0 0 0 0",
+            "padding": "0px 0px"
+          }
+        },
+        "Tablet": {
+          ".etn-content-item.etn-accordion-heading": {
+            "fontSize": "20px"
+          },
+          ".etn-content-item .etn-acccordion-contents": {
+            "fontSize": "14px"
+          }
+        },
+        "Mobile": {
+          ".etn-content-item .etn-accordion-heading": {
+            "fontSize": "18px"
+          },
+          ".etn-content-item .etn-acccordion-contents": {
+            "fontSize": "14px"
+          }
+        }
+      }
+    }
+  },
+  "editorScript": "file:./index.js"
+}
