@@ -21,13 +21,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wp_is9cr' );
+define( 'DB_NAME', 'hello_getyourticket_events_db' );
 
 /** Database username */
-define( 'DB_USER', 'wp_znzh8' );
+define( 'DB_USER', 'hello_getyourticket_events_user' );
 
 /** Database password */
-define( 'DB_PASSWORD', '?Y4rF4yUT1DrgW?M' );
+define( 'DB_PASSWORD', 'hello_getyourticket_events_user' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost:3306' );
