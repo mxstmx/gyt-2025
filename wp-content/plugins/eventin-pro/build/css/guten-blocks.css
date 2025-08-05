@@ -1,0 +1,1 @@
+.diamond-separator{align-items:center;display:flex;justify-content:center;margin:10px 0}.diamond-separator .line{background-color:#e4e5ec;border-radius:6px;flex:1;height:2px}.diamond-separator .diamond{background-color:#e4e5ec;height:12px;margin:0 10px;transform:rotate(45deg);width:12px}

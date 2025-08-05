@@ -1,0 +1,34 @@
+
+---Downloaded files---
+The import files for: most Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://demo.getyourticket.events
+Data file = /var/www/vhosts/getyourticket.events/demo.getyourticket.events/wp-content/uploads/2025/07/demo-content-import-file_2025-07-19__21-04-48.xml
+Widget file = /var/www/vhosts/getyourticket.events/demo.getyourticket.events/wp-content/uploads/2025/07/demo-widgets-import-file_2025-07-19__21-04-48.json
+Customizer file = /var/www/vhosts/getyourticket.events/demo.getyourticket.events/wp-content/uploads/2025/07/demo-customizer-import-file_2025-07-19__21-04-48.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Blog Sidebar : 
+
+Most: Recent Thumbnail Posts - No Title - Imported
+Kategorien - No Title - Imported
+Schlagwörter-Wolke - No Title - Imported
+mc4wp_form_widget - Newsletter - Site does not support widget
+
+Shop Sidebar : 
+
+Produkte nach Preis filtern - Filter by price - Imported
+Produktliste - Products - Imported
+Produkt-Kategorien - Product categories - Imported
+Produkt-Schlagwort-Wolke - Product tags - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
