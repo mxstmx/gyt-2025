@@ -22,13 +22,6 @@ function most_register_required_plugins() {
 		),
 
 		array(
-			'name' => esc_html__( 'Most Helper Plugin', 'most' ),
-			'slug' => 'most_plugin',
-			'source' => esc_url( $source . 'most_plugin.zip'),
-			'required' => true,
-		),
-
-		array(
 			'name' => esc_html__( 'Kirki', 'most' ),
 			'slug' => 'kirki',
 			'required' => true,
