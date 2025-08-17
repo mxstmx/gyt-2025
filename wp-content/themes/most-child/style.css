@@ -14,4 +14,43 @@ Template: most
 */
 
 /* Add your own modification from here
------
+--------------------------------------------------------------*/
+
+.speaker-header {
+    color: #fff;
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.speaker-logo {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.speaker-logo img {
+    width: 25%;
+    height: auto;
+}
+
+.speaker-events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.speaker-events-grid .event-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.speaker-events-grid .event-title {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.speaker-events-grid .event-date {
+    font-size: 0.9em;
+    color: #666;
+}
